@@ -1,0 +1,20 @@
+
+Resources:
+  cocos-tes2-3422e:
+    Type: TencentCloud::Serverless::Namespace
+    function:
+      Properties:
+        CodeUri: .
+        Description: ''
+        Environment:
+          Variables: {}
+        Events: {}
+        Handler: index.main
+        MemorySize: 256
+        Role: TCB_QcsRole
+        Runtime: Nodejs8.9
+        Timeout: 20
+        VpcConfig:
+          SubnetId: ''
+          VpcId: ''
+      Type: TencentCloud::Serverless::Function

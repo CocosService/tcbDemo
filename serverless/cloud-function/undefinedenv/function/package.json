@@ -1,0 +1,16 @@
+{
+  "name": "function",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.88.2",
+    "tcb-admin-node": "^1.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
