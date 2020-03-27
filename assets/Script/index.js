@@ -113,7 +113,7 @@ cc.Class({
         console.log('get data ', res);
       }
       else {
-        this.printLog('get data failed');
+        this.printLog('get data failed, ' + res.result.msg);
         console.log('get data failed', res);
       }
     }).catch(console.error);
@@ -135,11 +135,11 @@ cc.Class({
       }
     }).then(res => {
       if (res.result.status === 0) {
-        this.printLog('submit data ' + res.result.msg);
-        console.log('submit data ', res);
+        this.printLog('submit data, ' + res.result.msg);
+        console.log('submit data', res);
       }
       else {
-        this.printLog('submit data failed');
+        this.printLog('submit data failed, ' + res.result.msg);
         console.log('submit data failed', res);
       }
     }).catch(console.error);;
