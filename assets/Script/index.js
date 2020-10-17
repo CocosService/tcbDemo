@@ -67,7 +67,7 @@ cc.Class({
     this.app = cc.cloud && cc.cloud.initialize();
 
     let auth = this.app.auth();
-    auth.signInAnonymously().then(res => {
+    auth.anonymousAuthProvider().signIn().then(res => {
       // 需要先做授权，云函数才能正常调用，本例子中使用匿名登录方式访问云开发资源，返回后可视为初始化完成
       // 建议后期改为授权登录模式，
       this.printLog("TCB inited");
